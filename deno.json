@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "start": "deno run -ENRSW --allow-run --unstable-detect-cjs packages/node_modules/node-red/red.js"
+  }
+}
