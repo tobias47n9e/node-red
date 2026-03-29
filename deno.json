@@ -1,5 +1,10 @@
 {
   "tasks": {
-    "start": "deno run -ENRSW --allow-run --unstable-detect-cjs packages/node_modules/node-red/red.js"
+    "start": "deno run -ENRSW --allow-run --unstable-detect-cjs packages/node_modules/node-red/red.js",
+    "install": "deno install --allow-import",
+    "build": "deno -ERSW --unstable-detect-cjs node_modules/grunt/bin/grunt build"
+  },
+  "imports": {
+    "jsdoc-nr-template/": "https://raw.githubusercontent.com/node-red/jsdoc-nr-template/main/"
   }
 }
